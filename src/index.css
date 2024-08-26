@@ -1,0 +1,94 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+@layer components {
+    @media (min-width: 1536px) {
+        .container {
+            max-width: 1300px;
+        }
+    }
+    /* h1 {
+      @apply text-2xl;
+    }
+    h2 {
+      @apply text-xl;
+    } */
+}  
+
+
+.seperator{
+    width: 1px;
+    height: 15px;
+    margin: 0 5px;
+    background: #000;
+}
+
+
+.pagin-list-link,.prev-list,.next-list,.pagin-break{
+  background: rgb(246, 246, 246);
+  margin-right: 4px;
+  transition: 0.5s ease all;
+}
+
+.pagin-list-link:hover,.prev-list:hover,.next-list:hover,.pagin-break:hover{
+  background: rgb(58, 60, 62);
+  opacity: 0.8;
+  color: #fff;
+}
+
+.pagin-link,.prev-link,.next-link,.break-list{
+  padding: 12px 23px;
+  display: block;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+
+.pagin-active-link{
+  background: rgb(58, 60, 62);
+  color: #fff;
+}
+
+.pagin-container{
+  display: flex;
+  justify-content: center;
+}
+
+.pagin-disabled{
+  background: #ccc !important;
+  color: #000 !important;
+  opacity: 1 !important;
+}
+
+.pagin-disabled a{
+  cursor: default;
+}
+
+.react-date-picker{
+  margin-left: 10px;
+}
+
+.react-date-picker .react-date-picker__wrapper{
+  padding: 12px 5px;
+  border-radius: 6px;
+  border-color: #d1d5db;
+}
+
+.react-date-picker .react-date-picker__wrapper input{
+  outline: none;
+}
+
+.news-card h2, .news-card img{
+  transition: 0.5s ease all;
+}
+
+.news-card:hover h2{
+  text-decoration: underline;
+}
+
+.news-card:hover img{
+  filter: contrast(0.5);
+}
